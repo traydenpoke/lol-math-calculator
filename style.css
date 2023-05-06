@@ -1,0 +1,83 @@
+body {
+    background: rgb(120, 209, 255);
+    background: linear-gradient(90deg, rgba(120, 209, 255, 1) 0%, rgb(68, 163, 251) 50%, rgb(110, 144, 202) 100%);
+}
+
+.display-list {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.prompt-list {
+    display: grid;
+    grid-template-columns: repeat(4, 24vh);
+    grid-template-rows: repeat(auto-fill, 100px);
+    padding: 10px;
+}
+
+.prompt,
+.prompt-cost {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+}
+
+.prompt-list,
+.display-calculator {
+    flex: 1;
+    height: 100vh;
+}
+
+.prompt-cost {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 175px;
+    height: 25px;
+    border-radius: 5px;
+    border-width: 3px;
+}
+
+button {
+    width: 300px;
+    height: 100px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 40px;
+    margin-bottom: -5px;
+    margin-top: 5px;
+    background-color: #bcbfc9;
+    border-radius: 10px;
+    border-width: 3px;
+}
+
+button:hover {
+    background-color: #91939b;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.calc-text {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .prompt-list {
+        grid-template-columns: repeat(3, 24vh);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .prompt-list {
+        grid-template-columns: repeat(2, 24vh);
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .prompt-list {
+        grid-template-columns: 24vh;
+        grid-template-rows: repeat(auto-fill, 65px);
+    }
+}
