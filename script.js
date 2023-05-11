@@ -4,6 +4,7 @@ function displayItems() {
     // create a prompt div, add label & input, then add prompt to prompt-list
     for (let i = 0; i < labels.length; i++) {
         const div = document.getElementById("prompt-list");
+
         const input = document.createElement("input");
         input.type = "text";
         input.className = "input-text";

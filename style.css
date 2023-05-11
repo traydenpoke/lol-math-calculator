@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
 body {
     background: rgb(120, 209, 255);
     background: linear-gradient(90deg, rgba(120, 209, 255, 1) 0%, rgb(68, 163, 251) 50%, rgb(110, 144, 202) 100%);
     margin: 0px 0px 0px 0px;
+    font-family: "Poppins", sans-serif;
 }
 
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 100px;
+    height: 75px;
     background: #21325e;
     font-size: 25px;
     color: white;
@@ -16,7 +20,7 @@ header {
 }
 
 header p {
-    margin-top: 35px;
+    margin-top: 20px;
 }
 
 .display-list {
@@ -35,7 +39,6 @@ header p {
 
 .prompt,
 .prompt-cost {
-    font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 20px;
 }
 
@@ -52,16 +55,20 @@ header p {
 
 input {
     width: 175px;
-    height: 25px;
+    height: 35px;
     border-radius: 5px;
     border-width: 3px;
+    box-sizing: border-box;
+    background: #c5f0f5;
+    outline: none;
+    color: #05445E;
+    font-size: 1em;
 }
 
 button {
     width: 300px;
     height: 100px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size: 40px;
+    font-size: 3em;
     margin-bottom: -5px;
     margin-top: 5px;
     background-color: #bcbfc9;
@@ -76,7 +83,6 @@ button:hover {
 }
 
 .calc-text {
-    font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 20px;
 }
 
@@ -86,7 +92,7 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
     #prompt-list {
         grid-template-columns: repeat(2, 23vh);
         grid-template-rows: repeat(10, 85px);
@@ -96,6 +102,10 @@ button:hover {
         width: 200px;
         height: 75px;
         font-size: 30px;
+    }
+
+    header {
+        font-size: 22px;
     }
 }
 
@@ -122,5 +132,9 @@ button:hover {
         width: 150px;
         height: 50px;
         font-size: 20px;
+    }
+
+    header {
+        font-size: 18px;
     }
 }
